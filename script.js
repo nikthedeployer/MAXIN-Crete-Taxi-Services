@@ -1,8 +1,10 @@
 
 function toggleLanguage() {
-    const elements = document.querySelectorAll('[data-en]');
-    const isEnglish = elements[0].textContent === elements[0].getAttribute('data-en');
-    elements.forEach(el => {
-        el.textContent = isEnglish ? el.getAttribute('data-gr') : el.getAttribute('data-en');
-    });
+  const elements = document.querySelectorAll('[data-en]');
+  elements.forEach(el => {
+    const current = el.innerText;
+    const en = el.getAttribute('data-en');
+    const gr = el.getAttribute('data-gr');
+    el.innerText = current === en ? gr : en;
+  });
 }
