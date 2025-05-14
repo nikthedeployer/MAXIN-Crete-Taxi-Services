@@ -1,46 +1,80 @@
 
 body {
-  font-family: 'Segoe UI', sans-serif;
   margin: 0;
-  padding: 0;
-  background: url('images/crete.jpg') no-repeat center center fixed;
-  background-size: cover;
-  color: #fff;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #f8f9fa;
+  color: #333;
+}
+
+.container {
+  width: 90%;
+  max-width: 1000px;
+  margin: auto;
+  padding: 20px;
 }
 
 header {
-  background-color: rgba(0, 0, 0, 0.7);
-  padding: 2rem;
+  background: #072D44;
+  color: white;
+  padding: 40px 0;
   text-align: center;
 }
 
-main {
-  background-color: rgba(0, 0, 0, 0.6);
-  padding: 2rem;
-  margin: 2rem;
-  border-radius: 10px;
+header h1 {
+  margin: 0;
+  font-size: 2.5rem;
 }
 
-footer {
-  text-align: center;
-  background: rgba(0, 0, 0, 0.7);
-  padding: 1rem;
-  position: fixed;
-  bottom: 0;
-  width: 100%;
+header p {
+  font-size: 1.2rem;
+  margin-top: 10px;
+}
+
+section {
+  margin: 40px 0;
+}
+
+h2 {
+  font-size: 2rem;
+  color: #072D44;
+  margin-bottom: 20px;
+}
+
+.price-category {
+  margin-top: 30px;
+}
+
+.price-category h3 {
+  font-size: 1.5rem;
+  color: #005b96;
+  margin-bottom: 10px;
+}
+
+ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+ul li {
+  background: white;
+  margin-bottom: 8px;
+  padding: 12px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
 }
 
 a {
-  color: #FFD700;
-  font-weight: bold;
+  color: #007BFF;
+  text-decoration: none;
 }
 
-button {
-  margin-top: 10px;
-  padding: 0.5rem 1rem;
-  border: none;
-  border-radius: 5px;
-  background-color: #FFD700;
-  color: #000;
-  cursor: pointer;
+a:hover {
+  text-decoration: underline;
+}
+
+footer {
+  background: #072D44;
+  color: white;
+  text-align: center;
+  padding: 20px 0;
 }
