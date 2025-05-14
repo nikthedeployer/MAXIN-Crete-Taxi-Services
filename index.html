@@ -2,129 +2,81 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>MAXIN Crete Taxi Services</title>
-  <link rel="stylesheet" href="style.css" />
+  <meta name="description" content="MAXIN Crete Taxi Services by the Mavropoulos Family. Safe, comfortable and professional taxi transfers across Crete. Book online!">
+  <meta name="keywords" content="Crete taxi, Heraklion taxi, airport transfer, Mavropoulos family, MAXIN taxi services">
+  <meta name="author" content="MAXIN Crete Taxi Services">
+  <style>
+    body { font-family: 'Roboto', sans-serif; margin: 0; padding: 0; background: #f8f9fa; color: #333; }
+    header { background: #ff8800; color: white; padding: 1rem; display: flex; justify-content: space-between; align-items: center; }
+    header h1 { margin: 0; }
+    .lang-switch { cursor: pointer; }
+    main { padding: 2rem; max-width: 900px; margin: auto; }
+    .pricing-table { margin-top: 2rem; border-collapse: collapse; width: 100%; }
+    .pricing-table th, .pricing-table td { border: 1px solid #ccc; padding: 0.5rem; }
+    .cta { margin-top: 1.5rem; display: inline-block; background: #28a745; color: white; padding: 0.7rem 1.2rem; text-decoration: none; border-radius: 6px; }
+  </style>
 </head>
 <body>
   <header>
-    <div class="container">
-      <h1>MAXIN Crete Taxi Services</h1>
-      <p>By Mavropoulos Family</p>
-    </div>
+    <h1 id="title">MAXIN Crete Taxi Services</h1>
+    <div class="lang-switch" onclick="toggleLang()">🇬🇷 / 🇬🇧</div>
   </header>
+  <main>
+    <h2 id="why">Why Choose Us?</h2>
+    <p id="why-text">We offer reliable, comfortable, and family-friendly taxi transfers across Crete. Professional service by the Mavropoulos family.</p>
+    
+    <h2 id="book">Book with Us</h2>
+    <p id="book-text">Use our <a href="https://docs.google.com/forms/d/e/1FAIpQLSfRlsFnkpwkNGT0xWcifa72Ifnntx14tKtOiQmEVEwM3vgZSg/viewform">online booking form</a> or email us at <a href="mailto:nikgaming150@gmail.com">nikgaming150@gmail.com</a>.</p>
 
-  <section class="intro">
-    <div class="container">
-      <h2>Why Choose Us?</h2>
-      <p>Experience Crete in comfort and safety with our professional taxi services. Personalized for families and tourists alike, we provide reliable transportation across Crete at fair prices.</p>
-    </div>
-  </section>
+    <h2 id="payment">Payment Policy</h2>
+    <p id="payment-text">We require a 50% deposit to confirm your reservation. This helps us avoid cancellations and guarantee your ride.</p>
 
-  <section class="booking">
-    <div class="container">
-      <h2>Book with Us!</h2>
-      <ul>
-        <li><a href="https://docs.google.com/forms/d/e/1FAIpQLSfRlsFnkpwkNGT0xWcifa72Ifnntx14tKtOiQmEVEwM3vgZSg/viewform?usp=header" target="_blank">Book via our online form</a></li>
-        <li>Email: <a href="mailto:nikgaming150@gmail.com">nikgaming150@gmail.com</a></li>
-      </ul>
-    </div>
-  </section>
+    <h2 id="prices">Heraklion Area Prices</h2>
+    <table class="pricing-table">
+      <tr><th>Destination</th><th>Price (€)</th></tr>
+      <tr><td>Amoudara</td><td>30</td></tr>
+      <tr><td>Hersonissos</td><td>43</td></tr>
+      <tr><td>Kokkini Hani</td><td>30</td></tr>
+      <!-- Add more rows as needed -->
+    </table>
 
-  <section class="payment-policy">
-    <div class="container">
-      <h2>Payment Policy</h2>
-      <p>To ensure a smooth experience, a <strong>50% deposit</strong> is required at the time of booking. Once the deposit is confirmed, your reservation is finalized. This guarantees your trip and prevents cancellations.</p>
-    </div>
-  </section>
+    <a class="cta" href="https://docs.google.com/forms/d/e/1FAIpQLSfRlsFnkpwkNGT0xWcifa72Ifnntx14tKtOiQmEVEwM3vgZSg/viewform">Book Now</a>
+    <a class="cta" style="background: #007bff;" href="https://docs.google.com/forms/d/e/1FAIpQLSf_ijO6Fq4D9soOamkJRBAS3qF0cGyFn5TAX0V3lQxN8O2tfQ/viewform">Leave Feedback</a>
+  </main>
 
-  <section class="pricing">
-    <div class="container">
-      <h2>Price List</h2>
+  <script>
+    let lang = 'en';
+    const translations = {
+      'en': {
+        title: "MAXIN Crete Taxi Services",
+        why: "Why Choose Us?",
+        "why-text": "We offer reliable, comfortable, and family-friendly taxi transfers across Crete. Professional service by the Mavropoulos family.",
+        book: "Book with Us",
+        "book-text": "Use our online booking form or email us at nikgaming150@gmail.com.",
+        payment: "Payment Policy",
+        "payment-text": "We require a 50% deposit to confirm your reservation. This helps us avoid cancellations and guarantee your ride.",
+        prices: "Heraklion Area Prices"
+      },
+      'gr': {
+        title: "Υπηρεσίες Ταξί MAXIN Κρήτης",
+        why: "Γιατί να μας επιλέξετε;",
+        "why-text": "Προσφέρουμε αξιόπιστες, άνετες και φιλικές προς την οικογένεια μεταφορές σε όλη την Κρήτη. Επαγγελματική εξυπηρέτηση από την οικογένεια Μαυρόπουλου.",
+        book: "Κάντε Κράτηση",
+        "book-text": "Χρησιμοποιήστε την online φόρμα κράτησης ή στείλτε email στο nikgaming150@gmail.com.",
+        payment: "Πολιτική Πληρωμών",
+        "payment-text": "Απαιτείται προκαταβολή 50% για επιβεβαίωση της κράτησης. Αυτό βοηθά στην αποφυγή ακυρώσεων και διασφαλίζει τη μεταφορά σας.",
+        prices: "Τιμές Περιοχής Ηρακλείου"
+      }
+    };
 
-      <div class="price-category">
-        <h3>Heraklion Area</h3>
-        <ul>
-          <li>Amoudara: €30</li>
-          <li>Hersonissos: €43</li>
-          <li>Kokkini Hani: €30</li>
-          <li>Gouves: €35</li>
-          <li>Stalida: €50</li>
-          <li>Malia: €55</li>
-          <li>Sissi: €65</li>
-          <li>Milatos: €75</li>
-          <li>Neapoli: €70</li>
-          <li>Agios Nikolaos: €85</li>
-          <li>Elounda: €100</li>
-          <li>Istro: €110</li>
-          <li>Ierapetra: €130</li>
-          <li>Makrygialos: €159</li>
-          <li>Myrtos: €125</li>
-          <li>Agia Fotia (Ierapetra): €170</li>
-          <li>Sitia: €190</li>
-          <li>Vai: €220</li>
-          <li>Kato Zakros (Sitia): €250</li>
-          <li>Palaikastro (Sitia): €220</li>
-          <li>Roussa Ekklisia (Sitia): €200</li>
-          <li>Xerokampos: €240</li>
-        </ul>
-      </div>
-
-      <div class="price-category">
-        <h3>Western Crete</h3>
-        <ul>
-          <li>Rethymno: €115</li>
-          <li>Panormos (Rethymno): €90</li>
-          <li>Skaleta (Rethymno): €105</li>
-          <li>Atsipopoulo: €120</li>
-          <li>Georgioupolis: €135</li>
-          <li>Chania: €200</li>
-          <li>Kolymbari (Chania): €220</li>
-          <li>Kissamos: €250</li>
-          <li>Falasarna: €260</li>
-          <li>Elafonissi: €300</li>
-          <li>Paleochora: €300</li>
-          <li>Episkopi (Rethymno): €130</li>
-        </ul>
-      </div>
-
-      <div class="price-category">
-        <h3>Southern Crete</h3>
-        <ul>
-          <li>Agia Galini: €115</li>
-          <li>Tympaki: €100</li>
-          <li>Keratokampos: €100</li>
-          <li>Tsoutsouros: €100</li>
-          <li>Hora Sfakion: €200</li>
-          <li>Frangokastello: €200</li>
-        </ul>
-      </div>
-
-      <div class="price-category">
-        <h3>Nearby Destinations</h3>
-        <ul>
-          <li>Agia Pelagia: €45</li>
-          <li>Fodele: €50</li>
-          <li>Sisses: €60</li>
-          <li>Bali: €76</li>
-        </ul>
-      </div>
-
-      <div class="price-category">
-        <h3>Additional Additions</h3>
-        <ul>
-          <li>Karteros: €20</li>
-          <li>Matala: €100</li>
-        </ul>
-      </div>
-    </div>
-  </section>
-
-  <footer>
-    <div class="container">
-      <p>We look forward to making your travels in Crete comfortable, safe, and unforgettable.</p>
-      <p><a href="https://docs.google.com/forms/d/e/1FAIpQLSf_ijO6Fq4D9soOamkJRBAS3qF0cGyFn5TAX0V3lQxN8O2tfQ/viewform" target="_blank">Leave Feedback</a></p>
-    </div>
-  </footer>
+    function toggleLang() {
+      lang = lang === 'en' ? 'gr' : 'en';
+      for (const id in translations[lang]) {
+        document.getElementById(id).textContent = translations[lang][id];
+      }
+    }
+  </script>
 </body>
 </html>
