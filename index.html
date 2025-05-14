@@ -2,120 +2,78 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="MAXIN Crete Taxi Services | Heraklion Taxi Transfers | Professional and Safe Rides">
-    <meta name="keywords" content="Crete Taxi, Heraklion Taxi, MAXIN Taxi, Airport Transfer Crete, Taxi Services Crete, Crete Tours">
-    <meta name="author" content="MAXIN Taxi Services">
-    <title>MAXIN Crete Taxi Services</title>
-    <link rel="stylesheet" href="style.css">
-    <script defer src="script.js"></script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="MAXIN Crete Taxi Services - Safe, Comfortable, Reliable Transport across Crete.">
+  <meta name="keywords" content="Crete taxi, Heraklion transport, MAXIN taxi, airport transfer, Mavropoulos Family taxi">
+  <meta name="author" content="MAXIN Taxi Crete">
+  <title>MAXIN Crete Taxi Services</title>
+  <link rel="stylesheet" href="style.css" />
+  <script defer src="script.js"></script>
 </head>
 <body>
-    <header>
-        <h1>MAXIN Crete Taxi Services</h1>
-        <p>By Mavropoulos Family</p>
-        <button onclick="toggleLanguage()">🇬🇧 / 🇬🇷</button>
-    </header>
+  <header>
+    <h1>MAXIN Crete Taxi Services</h1>
+    <p>By Mavropoulos Family</p>
+    <button onclick="toggleLanguage()">GR / EN</button>
+  </header>
+  <main>
+    <section>
+      <h2 data-en="Our Taxi" data-gr="Το Ταξί μας">Our Taxi</h2>
+      <p data-en="Comfortable, air-conditioned vehicles driven by professionals with local knowledge." 
+         data-gr="Άνετα, κλιματιζόμενα οχήματα με επαγγελματίες οδηγούς με τοπική γνώση."></p>
+    </section>
+    <section>
+      <h2 data-en="Why Choose Us?" data-gr="Γιατί να μας επιλέξετε;">Why Choose Us?</h2>
+      <ul>
+        <li data-en="Friendly family-run business" data-gr="Φιλική οικογενειακή επιχείρηση"></li>
+        <li data-en="Safe and reliable rides" data-gr="Ασφαλείς και αξιόπιστες μεταφορές"></li>
+        <li data-en="Transparent pricing" data-gr="Διαφανείς τιμές"></li>
+      </ul>
+    </section>
+    <section>
+      <h2 data-en="Book with Us!" data-gr="Κλείστε μαζί μας!">Book with Us!</h2>
+      <p>
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLSfRlsFnkpwkNGT0xWcifa72Ifnntx14tKtOiQmEVEwM3vgZSg/viewform" target="_blank">Booking Form</a> |
+        Email: <a href="mailto:nikgaming150@gmail.com">nikgaming150@gmail.com</a>
+      </p>
+    </section>
+    <section>
+      <h2 data-en="Payment Policy" data-gr="Πολιτική Πληρωμών">Payment Policy</h2>
+      <p data-en="A 50% deposit is required at the time of booking. This ensures your ride is secured and avoids last-minute cancellations." 
+         data-gr="Απαιτείται προκαταβολή 50% κατά την κράτηση για εξασφάλιση της μεταφοράς και αποφυγή ακυρώσεων."></p>
+    </section>
+    <section>
+      <h2 data-en="Destinations & Prices" data-gr="Προορισμοί & Τιμές">Destinations & Prices</h2>
+      <pre style="white-space: pre-wrap; font-family: inherit;">
+Heraklion Area
+Amoudara: €30, Hersonissos: €43, Kokkini Hani: €30, Gouves: €35, Stalida: €50, Malia: €55, Sissi: €65,
+Milatos: €75, Neapoli: €70, Agios Nikolaos: €85, Elounda: €100, Istro: €110, Ierapetra: €130, Makrygialos: €159,
+Myrtos: €125, Agia Fotia: €170, Sitia: €190, Vai: €220, Kato Zakros: €250, Palaikastro: €220,
+Roussa Ekklisia: €200, Xerokampos: €240
 
-    <main>
-        <section id="intro">
-            <h2 data-en="Why Choose Us?" data-gr="Γιατί να μας επιλέξετε;">Why Choose Us?</h2>
-            <p data-en="Book with confidence. Safe, reliable, and professional taxi services based in Heraklion." 
-               data-gr="Κλείστε με σιγουριά. Ασφαλείς, αξιόπιστες και επαγγελματικές υπηρεσίες ταξί με έδρα το Ηράκλειο.">
-               Book with confidence. Safe, reliable, and professional taxi services based in Heraklion.
-            </p>
-        </section>
+Western Crete
+Rethymno: €115, Panormos: €90, Skaleta: €105, Atsipopoulo: €120, Georgioupolis: €135, Chania: €200,
+Kolymbari: €220, Kissamos: €250, Falasarna: €260, Elafonissi: €300, Paleochora: €300, Episkopi: €130
 
-        <section id="book">
-            <h2 data-en="Book with Us!" data-gr="Κλείστε μαζί μας!">Book with Us!</h2>
-            <ul>
-                <li><a href="https://docs.google.com/forms/d/e/1FAIpQLSfRlsFnkpwkNGT0xWcifa72Ifnntx14tKtOiQmEVEwM3vgZSg/viewform" target="_blank" data-en="Online Booking Form" data-gr="Φόρμα Κράτησης">Online Booking Form</a></li>
-                <li><a href="mailto:nikgaming150@gmail.com">nikgaming150@gmail.com</a></li>
-            </ul>
-        </section>
+Southern Crete
+Agia Galini: €115, Tympaki: €100, Keratokampos: €100, Tsoutsouros: €100, Hora Sfakion: €200,
+Frangokastello: €200
 
-        <section id="prices">
-            <h2 data-en="Our Prices" data-gr="Οι Τιμές μας">Our Prices</h2>
-            <h3>Heraklion Area</h3>
-            <ul>
-                <li>Amoudara: €30</li>
-                <li>Hersonissos: €43</li>
-                <li>Kokkini Hani: €30</li>
-                <li>Gouves: €35</li>
-                <li>Stalida: €50</li>
-                <li>Malia: €55</li>
-                <li>Sissi: €65</li>
-                <li>Milatos: €75</li>
-                <li>Neapoli: €70</li>
-                <li>Agios Nikolaos: €85</li>
-                <li>Elounda: €100</li>
-                <li>Istro: €110</li>
-                <li>Ierapetra: €130</li>
-                <li>Makrygialos: €159</li>
-                <li>Myrtos: €125</li>
-                <li>Agia Fotia (Ierapetra): €170</li>
-                <li>Sitia: €190</li>
-                <li>Vai: €220</li>
-                <li>Kato Zakros (Sitia): €250</li>
-                <li>Palaikastro (Sitia): €220</li>
-                <li>Roussa Ekklisia (Sitia): €200</li>
-                <li>Xerokampos: €240</li>
-            </ul>
-            <h3>Western Crete</h3>
-            <ul>
-                <li>Rethymno: €115</li>
-                <li>Panormos (Rethymno): €90</li>
-                <li>Skaleta (Rethymno): €105</li>
-                <li>Atsipopoulo: €120</li>
-                <li>Georgioupolis: €135</li>
-                <li>Chania: €200</li>
-                <li>Kolymbari (Chania): €220</li>
-                <li>Kissamos: €250</li>
-                <li>Falasarna: €260</li>
-                <li>Elafonissi: €300</li>
-                <li>Paleochora: €300</li>
-                <li>Episkopi (Rethymno): €130</li>
-            </ul>
-            <h3>Southern Crete</h3>
-            <ul>
-                <li>Agia Galini: €115</li>
-                <li>Tympaki: €100</li>
-                <li>Keratokampos: €100</li>
-                <li>Tsoutsouros: €100</li>
-                <li>Hora Sfakion: €200</li>
-                <li>Frangokastello: €200</li>
-            </ul>
-            <h3>Nearby Destinations</h3>
-            <ul>
-                <li>Agia Pelagia: €45</li>
-                <li>Fodele: €50</li>
-                <li>Sisses: €60</li>
-                <li>Bali: €76</li>
-            </ul>
-            <h3>Additional Additions</h3>
-            <ul>
-                <li>Karteros: €20</li>
-                <li>Matala: €100</li>
-            </ul>
-        </section>
+Nearby Destinations
+Agia Pelagia: €45, Fodele: €50, Sisses: €60, Bali: €76
 
-        <section id="payment">
-            <h2 data-en="Payment Policy" data-gr="Πολιτική Πληρωμής">Payment Policy</h2>
-            <p data-en="We request a 50% deposit to confirm your booking. This guarantees your trip and avoids last-minute cancellations."
-               data-gr="Ζητούμε προκαταβολή 50% για να επιβεβαιώσουμε την κράτησή σας. Αυτό διασφαλίζει το ταξίδι σας και αποφεύγει ακυρώσεις.">
-               We request a 50% deposit to confirm your booking. This guarantees your trip and avoids last-minute cancellations.
-            </p>
-        </section>
-
-        <section id="feedback">
-            <h2 data-en="Give Us Feedback" data-gr="Δώστε μας τα σχόλιά σας">Give Us Feedback</h2>
-            <a href="https://docs.google.com/forms/d/e/1FAIpQLSf_ijO6Fq4D9soOamkJRBAS3qF0cGyFn5TAX0V3lQxN8O2tfQ/viewform" target="_blank">Feedback Form</a>
-        </section>
-    </main>
-
-    <footer>
-        <p>&copy; 2025 MAXIN Crete Taxi Services - Heraklion</p>
-    </footer>
+Additional Additions
+Karteros: €20, Matala: €100
+      </pre>
+    </section>
+    <section>
+      <h2 data-en="Feedback" data-gr="Σχόλια">Feedback</h2>
+      <p><a href="https://docs.google.com/forms/d/e/1FAIpQLSf_ijO6Fq4D9soOamkJRBAS3qF0cGyFn5TAX0V3lQxN8O2tfQ/viewform" target="_blank">Leave Feedback</a></p>
+    </section>
+  </main>
+  <footer>
+    <p>&copy; 2025 MAXIN Crete Taxi Services</p>
+  </footer>
 </body>
 </html>
